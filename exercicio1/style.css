@@ -1,17 +1,28 @@
-#texto-fonte-root{
 
+/* A minha fonte tem 3 vezes o tamanho da fonte do meu root */
+
+#texto-fonte-root{
+   font-size: 3rem;
 }
+
+/* Os meus paddings verticais possuem 2 vezes o tamanho da minha fonte */
 
 #texto-paddings-verticais{
-
+    padding: 2em 0;
 }
+
+/* A minha altura assume vinte porcento do comprimento da tela toda */
 
 #altura-porcentagem-comprimento{
-
+    height: 20vw;
+    background-color: teal;
 }
 
-#comprimento-metade-altura{
+/* Já o meu comprimento assume metade da altura da tela toda */
 
+#comprimento-metade-altura{
+    width: 50vh;
+    background-color: yellow;
 }
 
 .container{
@@ -20,14 +31,28 @@
     font-size: 20px;
 }
 
-#fonte-setenta{
+/* A minha fonte é setenta porcento da fonte do meu pai */
 
-}
+#fonte-setenta{
+    /* font-size: 0.7em; */
+    font-size: 70%; 
+    
+    /* Podemos fazer dessas duas formas */
+}   
 
 #comprimento-pai{
+    /* width: 10%; */
+    width: 0.1em;
 
+    /* Podemos fazer dessas duas formas */
 }
 
-#altura-pai{
+ul {
+    height: 70vh
+} /* Precisei criar essa ul porque o pai do exercício abaixo era a ul, e não o container acima */
 
+/* A minha altura é dez porcento da altura do meu pai */
+
+#altura-pai{
+    height: 10%;
 }
