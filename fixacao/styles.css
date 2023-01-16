@@ -1,3 +1,13 @@
+
+/* EXERCÍCIO DE FIXAÇÃO 
+
+Vamos transformar o layout abaixo, que foi pensado como Desktop First, em sua versão mobile. Queremos que a tela fique no formato mobile quando atingir o breakpoint mobile, ou seja, quando a largura da tela for menor que 480 pixels. 
+
+Algumas definições para ajudar:
+ - A largura do conteúdo principal (main) é de 100%, no entanto, o valor máximo que o conteúdo alcança é 800px;
+ - Utilize flex ou grid para facilitar a criação dos layouts. Você pode trocar de um para outro sem problema!
+ - Lembre-se de utilizar medidas que ajudem na responsividade, e não se preocupe se não ficar igualzinho. O importante é fazer com que as alterações sejam visíveis ao mudarmos a largura! */
+
 * {
     padding: 0;
     margin: 0;
@@ -13,7 +23,7 @@
   }
   
   main {
-    height: 77vh;
+    min-height: 77vh; /* Precisei alterar a main de height para min-height para conseguir concluir o exercício; */
     max-width: 800px;
     display: flex;
     flex-direction: row;
@@ -45,4 +55,20 @@
     color: white;
     padding: 20px;
     width: 100%;
+  }
+
+  @media screen and (max-width: 600px) {
+    main {
+      flex-direction: column;
+    }
+
+    header {
+      text-align: center;
+    }
+
+    footer {
+      position: sticky;
+      text-align: center;
+    }
+    
   }
